@@ -7,8 +7,7 @@ from huggingface_hub import from_pretrained_keras
 
 @st.cache(persist=True,allow_output_mutation=True,show_spinner=False,suppress_st_warning=True)
 def instantiate_model():
-    model = from_pretrained_keras("keras-io/lowlight-enhance-mirnet", compile=False)
-    return model
+    return from_pretrained_keras("keras-io/lowlight-enhance-mirnet", compile=False)
 
 
 @st.cache(persist=True,allow_output_mutation=True,show_spinner=False,suppress_st_warning=True)
